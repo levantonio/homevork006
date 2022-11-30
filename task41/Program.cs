@@ -7,20 +7,20 @@
 
 
 Console.Write("Введите числа через запятую: ");
-string numbers = Console.ReadLine();
+string m = Console.ReadLine();
 
-string[] enternum = new string[numbers.Length];
+string[] enternum = new string[m.Length];
 int j = 0;
 
 for (int i = 0; i < enternum.Length; i++)
 {
-    if (numbers[i] == ',')
+    if (m[i] == ',')
     {
         j++;
     }
     else
     {
-        enternum[j] = enternum[j] + $"{numbers[i]}";
+        enternum[j] = enternum[j] + $"{m[i]}";
     }
 }
 j++;
